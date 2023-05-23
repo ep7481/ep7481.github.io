@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic Page - Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Evan Paules</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">About me</a></li>
+							<li class="active"><a href="generic.html">Projects</a></li>
+						</ul>
+						<ul class="icons">
+							<a href="https://github.com/ep7481" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Projects<br />
+									</h1>
+									<p>A list of projects that I have completed including descriptions and pictures</p>
+								</header>
+									<h2>Freshman MMO</h2>
+								<p>Led the development of a preexisiting MMO game for university freshman to be able to play in the freshman seminar class at Shippensburg. We were responsible for developing the game functionality and fixing exisiting functionality. Over the course of the semester we developed new sprites for npcs, such as bicycles and costumes. We also developed 3 new maps for the game, extending the map to match more of campus, and new types of quests for players to complete. </p>
+								<p>We developed a command scheduling system for the main purpose of creating timed quest objectives. The command scheduling system was implemented so that it can be resused and is not just locked to a certain feature. A command can now be sent with the unix timestamp for when the timer expires and the command to be executed when the timer is up. These timers will only be persisted to the database when they are assoicated with a player by a playerID.</p>
+								<p>Another thing we added was quiet servers. The freshman that beta tested the game complained that they could not find there character in the starting room when they first played the game. We thought of the idea to creat a quiet server so that when you are in certain areas the only thing you will be able to see is yourself and npcs.</p>
+								<p>The final thing we did was refactor the database tables for items in the game. There was five tables that were being used for things that involved vanity items with a lot of duplicate data. We lowered that down to three so that we can remove duplicate data and make sure that there was no data that was being lost or edited incorrectly.</p>
+								<h3>Database before</h3>
+								<img src="images/pic03.PNG" class="w3-round" alt="Norway">
+								<h3>Database after</h3>
+								<img src="images/pic02.PNG" class="w3-round" alt="Norway">
+								<h2>Bed Shaker App</h2>
+								<p>Led the development of the backend services used on an app that works with a smart switch to trigger a bed shaker to wake people who are hard of hearing when they recieve a certain text message from specified senders.</p>
+								<p>We utilized API calls from the smart switch to make HTTP requests to change the network that the switch was connected to and to also toggle the switch. We created four pages on the app the main page, wifi connection page, contacts page, and settings page.</p>
+								<h4>The main page has a button to return a message back to the sender to inform them that the user has woke up.</h4>
+								<center><img src="images/pic04.PNG" class="centerImage" width="250" height="550" alt="Norway"></center>
+								<h4>The wifi page has inputs for wifi SSID and password. It also contains documentation on how to connect.</h4>
+								<center><img src="images/pic05.PNG" class="centerImage" width="250" height="550" alt="Norway"></center>
+								<h4>The contacts page has inputs for adding what number can trigger the switch and the name of the sender.</h4>
+								<center><img src="images/pic06.PNG" class="centerImage" width="250" height="550" alt="Norway"></center>
+								<h4>The settings page has inputs for shake time, interval time, and number of shakes so the user can configure there personal alarm.</h4>
+								<center><img src="images/pic07.PNG" class="centerImage" width="250" height="550" alt="Norway"></center>
+								
+								
+							</section>
+
+					</div>
+
+				
+				<!-- Copyright -->
+					<div>
+						<ul><li>&copy; Evan Paules</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
